@@ -1,0 +1,68 @@
+/*
+Theme Name: TodoPress
+Theme URI: https://github.com/addidesign/todopress
+Description: Example of building a Web App in WordPress
+Author: Adam Ward - Atomic Smash
+Author URI: http://www.atomicsmash.co.uk
+Version: 1.0.0
+*/
+
+/*
+* Import Google Font
+*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2c3e50;
+}
+
+h1.title {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 10px;
+}
+
+h1.title::after {
+    content:'';
+    height: 5px;
+    width: 100px;
+    background-color:
+}
+
+p.intro__text {
+    width: 350px;
+    text-align: center;
+    margin: 20px auto 80px;
+    font-size: 20px;
+}
+.intro__text a {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/*
+* Style up register and login links
+*/
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+
+.button__group {
+    font-size: 24px;
+    text-align: center;
+}
+
+a.button {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 8px 20px;
+}
+a.button:hover {
+    background-color: #e74c3c;
+    color: white;
+}

@@ -1,0 +1,88 @@
+/*
+*
+* This stylesheet is for overriding defaul WP Login screen styles
+*
+*/
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2c3e50;
+}
+
+body {
+    background-color: white;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #e74c3c !important;
+}
+
+#login {
+    padding: 0;
+}
+
+#login h1 a, .login h1 a {
+    background-image: url('screenshot.png');
+    width: 300px;
+    height: 200px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+#login form p.submit {
+    text-align: center;
+}
+#login {
+    width: 500px;
+}
+
+#backtoblog {
+    display: none !important;
+}
+
+.login #nav {
+    text-align: center;
+}
+.login #nav a {
+    font-weight: 800;
+ }
+
+.wp-core-ui .button-primary {
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: #eee;
+    height: 50px !important;
+    color: #2c3e50;
+    border: none;
+    box-shadow: 0 0 0;
+    text-shadow: 0 0 0;
+    float: none;
+    padding: 0 20px 0 !important;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:after,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:target {
+    background-color: #e74c3c;
+}
+
+.login form {
+    padding: 40px 80px;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="username"] {
+    border-radius: 5px;
+    background-color: #ededed;
+    padding: 10px !important;
+    height: 45px;
+    margin: 10px auto 30px !important;
+}

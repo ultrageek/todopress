@@ -1,0 +1,249 @@
+/*
+*
+* This stylesheet is for overriding defaul WP Admin Styles
+*
+*/
+
+/*
+* Import Google Font
+*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+
+/*
+* Change WP Admin defaults
+*/
+.wp-admin,
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu,
+#wpadminbar,
+.ab-item,
+.ab-sub-wrapper {
+    background-color: #ECF0F1 !important;
+}
+
+#wpadminbar * {
+    color: #2c3e50 !important;
+    font-weight: 800;
+}
+
+#wpadminbar ul li:first-child .ab-item {
+    pointer-events: none;
+    cursor: default;
+}
+
+#wp-admin-bar-logout > a {
+    pointer-events: all !important;
+    cursor: pointer !important;
+}
+
+.ab-sub-wrapper {
+    display: block !important;
+    box-shadow: 0 0 0 !important;
+}
+
+#wp-admin-bar-logout {
+        text-align: right;
+}
+
+#wpcontent {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+a {
+    color: #2c3e50;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.submit {
+    text-align: center !important;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary,
+.wp-core-ui .button-primary {
+    border-radius: 10px;
+    background-color: #eee;
+    font-size: 16px;
+    height: 40px;
+    border: none;
+    text-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #2c3e50;
+}
+
+.wp-core-ui .button-primary {
+        font-size: 20px;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:after,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:target {
+    background-color: #e74c3c;
+}
+
+a.button.logout {
+    position: relative;
+    top: -20px;
+    float: right;
+    right: 40px;
+    font-size: 20px;
+    padding: 8px 20px;
+    height: 42px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/*
+* Override Table styles
+*/
+#todo-list,
+#todo-list-completed {
+    position: relative;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+#todo-list td,
+#todo-list-completed td {
+    font-size: 20px;
+}
+
+#todo-list tr:last-child,
+#todo-list-completed tr:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.alternate {
+    background-color: transparent;
+}
+
+#todo-list::before,
+#todo-list-completed::before {
+    content: "To-do's";
+    position: absolute;
+    top: -50px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#todo-list-completed::before {
+    content:'Completed!';
+}
+
+#todo-list p,
+#todo-list .tablesorter-header-inner,
+#todo-list-completed p,
+#todo-list-completed th {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+}
+
+#todo-list-completed span {
+    margin-left: 8px;
+}
+
+#todo-list .tablesorter-header,
+#todo-list-completed .tablesorter-header {
+    padding-left: 0;
+}
+
+#todo-list td p,
+#todo-list-completed td p {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+
+#todo-list td,
+#todo-list-completed td {
+    padding: 20px 0;
+}
+
+#todo-list td:first-child,
+#todo-list-completed td:first-child {
+    padding: 20px;
+}
+
+
+#addtodo,
+#edittodo {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#edittodo {
+    margin-top: 100px;
+}
+
+#addtodo::before,
+#edittodo::before {
+    content: 'Add a To-do...';
+    position: absolute;
+    top: -40px;
+    left: 1px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#edittodo::before {
+    content: 'Edit Todo...';
+}
+
+.form-table th {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.form-table select {
+    height: 45px;
+    font-size: 20px;
+}
+
+#cleverness_todo_priority {
+    width: 100% !important;
+}
+
+.todo-important, .widefat .todo-important td, .widefat .todo-important td p {
+    color: #e74c3c !important;
+}
+
+.todo-important .todo-priority::before {
+    content: '';
+    width: 2px;
+    height: 20px;
+}
+
+/*
+* Hide default WP stuff
+*/
+
+#contextual-help-link-wrap,
+.wp-heading-inline,
+#wpfooter,
+#adminmenumain,
+#wp-clevernesstododescription-media-buttons,
+ul#wp-admin-bar-root-default,
+#wp-admin-bar-user-info,
+#wp-admin-bar-edit-profile,
+.mce-toolbar-grp,
+.wp-editor-tabs,
+h2,
+h3 {
+    display: none !important;
+}
