@@ -59,19 +59,6 @@ function change_howdy($translated, $text, $domain) {
 
 
 /*
-* Remove Admin profile sections
-*/
-add_action('admin_init', 'admin_settings');
-
-function admin_settings() {
-    if ( ! current_user_can( 'manage_options' )) {
-        remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
-        remove_menu_page( 'index.php' ); //dashboard
-        add_filter('show_admin_bar', '__return_false');
-    }
-}
-
-/*
 * Login redirect
 */
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
