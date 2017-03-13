@@ -11,7 +11,7 @@
 $admin_link = admin_url("admin.php?page=cleverness-to-do-list");
 if ( is_user_logged_in() ) {
     $link .= '<a href="' . wp_logout_url( home_url() ) . '" class="button">' . __( 'Log Out' ) . '</a>';
-    $link .= '<a hef="' . $admin_link . '" class="button">' . __( 'My Profile' ) . '</a>';
+    $link .= '<a href="' . $admin_link . '" class="button">' . __( 'My Profile' ) . '</a>';
 } else {
     $link .= '<a href="' . wp_login_url($admin_link) . '" class="button">' . __( 'Login' ) . '</a>';
     $link .= '<a href="' . wp_registration_url() . '" class="button">' . __( 'Register' ) . '</a>';
